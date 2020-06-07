@@ -1,0 +1,67 @@
+.listing-band-container
+	margin-bottom: 200px
+
+.listing-band
+	display: block
+	font-weight 300
+	margin-bottom: 50px
+	text-decoration none
+	@media (min-width breakpoint-tablet)
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 100px
+		max-width calc(100% - 80px)
+	@media (min-width breakpoint-ipad-landscape)
+		margin-left: calc(100% / 12 * 1)
+		max-width 826px
+.listing-band--job
+	@media (min-width breakpoint-desktop)
+		margin: 0 auto 100px
+		max-width 730px
+.listing-band--message
+	@media (min-width breakpoint-tablet)
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		max-width 410px
+
+
+.listing-info
+.listing-line
+	display block
+	@media (min-width breakpoint-tablet)
+		display: table
+		margin-left: auto
+		margin-right: auto
+
+.listing-info
+	@media (min-width breakpoint-tablet)
+		width 160px
+	&:last-child
+		@media (min-width breakpoint-tablet)
+			text-align: right
+			width 255px
+	strong
+	time
+		display: block
+	time
+		font-size 15px
+		font-style italic
+
+.listing-line
+	background-color #000
+	flex-grow: 1
+	margin-top: .4em
+	margin-bottom: .4em
+	max-width 350px
+	width 75px
+	height 2px
+	@media (min-width breakpoint-tablet)
+		margin-top: 1em
+		margin-bottom: 1em
+		margin-right: 30px
+	@media (min-width breakpoint-ipad)
+		margin-left 30px
+		margin-right: @margin-left
+		width auto

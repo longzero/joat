@@ -1,0 +1,132 @@
+.burger
+	cursor: pointer
+	padding 20px 0 20px 20px
+	@media (min-width breakpoint-navigation)
+		display: none
+	&::before
+	&::after
+	.burger-slice
+		background-color #000
+		content ''
+		display: block
+		margin-bottom: 3px
+		width 20px
+		height 3px
+
+.header-navigation
+	background-color #fff
+	display: none
+	padding 40px 20px
+	position fixed
+	top 90px
+	left 0
+	z-index 1
+	width 100%
+	height 100%
+	@media (min-width breakpoint-navigation)
+		display flex
+		padding 0
+		position static
+		width auto
+		height @width
+	.navigation-open &
+		display block
+.header-social-icon
+	fill the-grey
+	width 12px
+.header-top
+	display: flex
+	justify-content: flex-end
+	padding-top: 10px
+	text-align: right
+	width 100%
+	height 24px
+
+.language-selector
+	// display: none
+	padding-left 1em
+	@media (min-width breakpoint-navigation)
+		border-left 1px solid the-copy
+
+.menu-item
+	list-style none
+	margin-left 1em
+	margin-right @margin-left
+	margin-bottom: 1em
+	@media (min-width breakpoint-navigation)
+		display inline-block
+		margin-bottom: 0
+	// This is meant for the language toggle if it is activated from WPML
+	// &:last-child
+	// 	margin 0
+	// 	padding-left 1em
+	// 	@media (min-width breakpoint-navigation)
+	// 		border-left 1px solid the-copy
+
+.navigation-open
+	overflow hidden
+
+.site-header
+	display flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: space-between
+	font-size 15px
+	font-weight 300
+	margin-left: auto
+	margin-right: @margin-left
+	margin-bottom: 50px
+	padding-left: 20px
+	padding-right: @padding-left
+	position sticky
+	top 0
+	z-index: layer-header
+	@media (min-width breakpoint-tablet)
+		margin-bottom: 100px
+	@media (min-width breakpoint-ipad-landscape)
+		font-size 16px
+	@media (min-width breakpoint-large)
+		padding-left: 0
+		padding-right: @padding-left
+	@media (min-width breakpoint-air)
+		margin-left 150px
+		margin-right: 150px
+		max-width none
+	a
+		text-decoration none
+		font-weight lighter
+	ul
+		margin-bottom: 0
+
+.site-logo
+	display block
+	width 165px
+
+.site-navigation
+	.menu-item
+		line-height 1
+		position: relative;
+		&::after
+			background: the-hover;
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: -5px;
+			z-index: -1;
+			transform: scale3d(0,1,1);
+			transform-origin: 0% 50%;
+			transition: transform 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+			width: calc(100% + 10px);
+			height: .5rem;
+		&:hover
+		&.current-menu-item
+		&.current-case_studies-ancestor
+			&::after
+				transform: scale3d(1,1,1)
+		&.current_page_parent
+			.single-post &
+				&::after
+					transform: scale3d(1,1,1)
+		span
+			display: inline-block;
+			white-space: pre;

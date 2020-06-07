@@ -1,0 +1,98 @@
+.listing-team
+	display: flex
+	justify-content: space-between
+	flex-direction: column
+	margin-left: 10px
+	margin-right 10px
+	margin-bottom: 100px
+	@media (min-width breakpoint-ipad)
+		flex-direction: row
+		flex-wrap wrap
+		margin-left: auto
+		margin-right: auto
+		max-width 760px
+	@media (min-width breakpoint-large)
+		max-width site-width
+
+.team-member
+	flex-basis: 280px
+	flex-grow: 0
+	flex-shrink: 0
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 100px
+	width @flex-basis
+	@media (min-width breakpoint-ipad)
+		flex-basis: 350px
+		width @flex-basis
+	&:empty
+		margin-bottom: 0
+
+.team-member-card
+	// box-shadow the-shadow
+	margin-bottom: 25px
+	position relative
+	transition-duration .3s
+	overflow hidden
+	@media (min-width breakpoint-ipad)
+		margin-bottom: 50px
+	&:hover
+		.team-member-content
+			opacity 1
+			transform translateY(0)
+
+.team-member-content
+	background-color #fff
+	display: flex
+	justify-content: flex-start
+	flex-direction: column
+	font-size 18px
+	padding 20px
+	opacity 0
+	position: absolute
+	top 0
+	left 0
+	transition: .3s
+	transform translateY(84%)
+	transform-origin: center bottom
+	width 100%
+	height 100%
+	overflow auto
+	@media (min-width breakpoint-ipad)
+		font-size 20px
+		padding 50px 40px
+
+.team-member-image
+	display: block
+
+.team-member-name
+	font-size 25px
+	font-weight bold
+	line-height 1.2
+	@media (min-width breakpoint-ipad)
+		font-size 40px
+
+.team-social-icon
+	fill the-team-social
+	transition: .3s
+	width 24px
+	height 24px
+.team-social-link
+	display: inline-block
+	margin-right 1em
+	width 24px
+	height 24px
+	&.facebook:hover .team-social-icon
+		fill the-facebook
+	&.instagram:hover .team-social-icon
+		fill the-instagram
+	&.linkedin:hover .team-social-icon
+		fill the-linkedin
+	&.pinterest:hover .team-social-icon
+		fill the-pinterest
+	&.spotify:hover .team-social-icon
+		fill the-spotify
+	&.twitter:hover .team-social-icon
+		fill the-twitter
+	&.youtube:hover .team-social-icon
+		fill the-youtube

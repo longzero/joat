@@ -1,0 +1,53 @@
+.author-avatar
+	background-position center
+	background-size cover
+	border-radius 50%
+	display: block
+	flex-basis 160px
+	flex-grow: 0
+	flex-shrink: 0
+	margin-right: 30px
+	width 160px
+	height @width
+.author-description
+	font-size (18/font-size)rem
+.author-name
+	font-size 25px
+	font-weight: 700
+	margin-bottom: 1em
+.author-name-link
+	text-decoration none
+
+.author-social
+	display flex
+	align-items: center
+	justify-content: center
+	margin-top: -70px
+	margin-bottom: 100px
+.author-social-icon
+	fill the-team-social
+.author-social-link
+	margin-left: .6em
+	margin-right: @margin-left
+	text-decoration none
+
+.card-info-line
+	a
+		font-weight 300
+		text-decoration none
+	strong
+		text-transform uppercase
+
+.post-author
+	margin-left: 20px
+	margin-bottom: 200px
+	// max-width calc(100% - 100px)
+	@media (min-width breakpoint-tablet)
+		display flex
+		align-items: center
+	@media (min-width breakpoint-desktop)
+		margin-left: auto
+		margin-right: auto
+		max-width 730px
+
+

@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^madein.loves.design$ [NC,OR]
+# RewriteCond %{HTTP_HOST} ^www.domain-name.com$
+RewriteCond %{REQUEST_URI} !wordpress/
+RewriteRule (.*) /wordpress/$1 [L]

@@ -1,0 +1,67 @@
+// DO NOT put breakpoints in this file,
+// use _header.styl instead, or wherever else that's appropriate,
+// because this file should be able to stand on its own across projects
+// So... Basically, don't modify this file, except the variables :P
+
+
+// From http://codepen.io/longzero/pen/xbeaxr?editors=010
+
+$color = #ecf0f1
+$width-line = 24px
+$height-icon = 14px
+$height-line = 2px
+$transition-time = 0.4s
+$rotation = 45deg
+$translateY = $height-icon / 2
+$translateX = 0
+
+.show-me-more
+  width: $width-line
+  height: $height-icon
+  position: relative
+  display: block
+  color: #95a5a6
+  display: inline-block
+  text-decoration: none
+  &:hover, &:focus
+    color: $color
+  .line
+    display: block
+    background: $color
+    width: 100%//$width-line
+    height: $height-line
+    position: absolute
+    left: 0
+    border-radius: ($height-line / 2)
+    transition: all $transition-time
+    -webkit-transition: all $transition-time
+    -moz-transition: all $transition-time
+    overflow hidden
+    &.line-1
+      top: 0
+    &.line-2
+      top: 50%
+    &.line-3
+      top: 100%
+  &:hover, &:focus
+    .line-1
+      transform: translateY($height-line / 2 * -1)
+      -webkit-transform: translateY($height-line / 2 * -1)
+      -moz-transform: translateY($height-line / 2 * -1)
+    .line-3
+      transform: translateY($height-line / 2)
+      -webkit-transform: translateY($height-line / 2)
+      -moz-transform: translateY($height-line / 2)
+  &.active
+    .line-1
+      transform: translateY($translateY) translateX($translateX) rotate($rotation)
+      -webkit-transform: translateY($translateY) translateX($translateX) rotate($rotation)
+      -moz-transform: translateY($translateY) translateX($translateX) rotate($rotation)
+    .line-2
+      transform: scaleY(0)
+      -webkit-transform: scaleY(0)
+      -moz-transform: scaleY(0)
+    .line-3
+      transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1)
+      -webkit-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1)
+      -moz-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1)

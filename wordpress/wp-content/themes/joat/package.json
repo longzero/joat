@@ -1,0 +1,17 @@
+{
+  "name": "gulp",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "^2.6.1",
+    "gulp-css-preprocessor": "0.0.2",
+    "gulp-header": "^1.8.8",
+    "gulp-if": "^2.0.2",
+    "gulp-minifier": "^0.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-run": "^1.7.1",
+    "gulp-util": "~2.2.12",
+    "yargs": "^7.0.2"
+  }
+}

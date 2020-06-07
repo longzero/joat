@@ -1,0 +1,37 @@
+.ticker-container
+	margin-bottom: 200px
+	width 100%
+	overflow hidden
+.ticker-item
+	color the-grey
+	font-size: 40px
+	font-weight bold
+	margin-right .3em
+	text-decoration none
+	transition: .3s
+	@media (min-width breakpoint-ipad)
+		font-size 80px
+	&:hover
+		color the-copy
+.ticker-line
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-name: ticker;
+	animation-duration: 30s;
+	line-height 1.2
+	white-space: nowrap
+	&:nth-child(2n+1)
+		animation-name: ticker-reverse
+
+@keyframes ticker
+	0%
+		transform: translateX(0);
+	100%
+		transform: translateX(-100%);
+
+@keyframes ticker-reverse
+	0%
+		transform: translateX(-100%);
+	100%
+		transform: translateX(0);
+
