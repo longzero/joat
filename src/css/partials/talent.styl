@@ -1,0 +1,64 @@
+.talent-post
+	margin 0 20px 200px
+	text-align center
+
+.talent-post-content
+	margin 0 auto
+	text-align: left
+	max-width 720px
+
+.talent-post-data
+	background-color #fff
+	border-radius 50px
+	box-shadow the-shadow
+	display: inline-flex
+	justify-content: space-around
+	margin-bottom: 100px
+	padding 1.25em 1em
+	position relative
+	z-index 1
+	text-align center
+	@media (min-width breakpoint-ipad)
+		padding 1.25em 2em
+
+.talent-post-data-item
+	margin 0 1em
+	&:nth-child(n+3)
+		display: none
+	&:nth-child(3)
+		@media (min-width breakpoint-mobile)
+			display: block
+	&:nth-child(4)
+		@media (min-width breakpoint-tablet)
+			display: block
+	&:nth-child(5)
+		@media (min-width breakpoint-ipad)
+			display: block
+	&:nth-child(5)
+		@media (min-width breakpoint-ipad)
+			display: block
+	&:nth-child(6)
+		@media (min-width breakpoint-ipad-landscape)
+			display: block
+	&:nth-child(n+7)
+		@media (min-width breakpoint-large)
+			display: block
+
+
+.talent-post-data-label
+.talent-post-data-value
+	line-height 1
+.talent-post-data-label
+	font-size 16px
+.talent-post-data-value
+	font-size 30px
+	font-weight bold
+
+.talent-post-image-box
+	box-shadow the-shadow
+	display: block
+	margin 0 auto -2.5em
+	max-width 920px
+.talent-post-image
+	display: block
+	width 100%

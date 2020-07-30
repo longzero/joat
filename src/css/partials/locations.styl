@@ -1,0 +1,78 @@
+.location-address-link
+	font-weight: 400
+	text-decoration none
+.location-card
+	margin 0 auto 100px
+	text-align center
+	max-width 446px
+	@media (min-width breakpoint-mobile)
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align left
+	@media (min-width breakpoint-desktop)
+		margin 0 3em
+	&:last-child
+		margin-bottom: 0
+.location-cards
+	@media (min-width breakpoint-desktop)
+		display: flex
+		justify-content: center
+		margin-bottom: 100px
+	&.small
+		max-width 100%
+	.card
+		@media (min-width breakpoint-desktop)
+			margin-bottom: 0
+.location-container
+	display: flex
+	justify-content: center
+.location-content
+	@media (min-width breakpoint-mobile)
+		margin-left: 1em
+.location-icon
+	background-color #fff
+	border-radius 50%
+	box-shadow: the-shadow
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-grow: 0
+	flex-shrink: 0
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 1.2em
+	padding 20px
+	width: 96px
+	height @width
+.location-image
+	margin-top -1em
+	margin-bottom -2.4em
+	position relative
+	z-index -1
+	height: 262px;
+.location-info-line
+	display: block
+	font-weight 400
+	text-decoration none
+	transition-duration: .3s
+	&.email
+		color the-coral
+		font-weight bold
+		&:hover
+			color #000
+.location-title
+	font-weight bold
+	text-transform: uppercase
+
+.location-card-full
+	text-align: center
+	.location-title
+		background-color #fff
+		box-shadow: the-shadow
+		display: table
+		font-size 30px
+		margin-left auto
+		margin-right auto
+		padding-left 1em
+		padding-right @padding-left

@@ -1,0 +1,188 @@
+.card
+	display block
+	margin-left: auto
+	margin-right: @margin-left
+	text-align: center
+	text-decoration none
+	max-width 450px
+	width 100%
+.card--article
+	&.category-content
+		.card-top
+			background-color the-content
+	&.category-influences
+		.card-top
+			background-color the-influences
+	&.category-medias
+		.card-top
+			background-color the-medias
+	&.category-pr
+		.card-top
+			background-color the-pr
+
+.card-article-title,
+.card-plus
+	display block
+	transition: .3s
+.card-article-title,
+.card-plus
+	background-color #fff
+	box-shadow: the-shadow
+	margin-left auto
+	margin-right @margin-left
+	position relative
+	z-index: 1
+.card-article-title
+	font-size 25px
+	font-weight bold
+	margin-bottom: -1em
+	padding 1.2em 1em
+	max-width 315px
+.card-image
+	background-position center
+	background-size cover
+	display block
+	position absolute
+	top 0
+	left 0
+	z-index -1
+	transition: .6s
+	width 100%
+	height 100%
+.card-image-container
+	display block
+	margin-bottom -3em
+	padding-bottom 100%
+	position relative
+	height 0
+	overflow hidden
+	@media (min-width breakpoint-mobile)
+		padding-bottom 63%
+	&:hover .card-image
+		@media (min-width breakpoint-large)
+			transform scale(1.05)
+	.card--article &
+		margin-top -1em
+
+.card-plus
+	border-radius 50%
+	display flex
+	align-items: center
+	justify-content: center
+	font-size 36px
+	font-weight 400
+	line-height 1
+	width 54px
+	height @width
+	&:hover .card-plus-content
+		@media (min-width breakpoint-large)
+			transform: rotate(360deg)
+
+.card-plus-content
+	transition .3s
+.card-top
+	background-color the-card-top
+	color #fff
+	display table
+	font-size 20px
+	font-weight bold
+	line-height 1
+	margin-left auto
+	margin-right @margin-left
+	padding 10px 1em
+	position relative
+	z-index: 1
+	text-transform: uppercase
+	transition .3s
+	white-space: nowrap
+	@media (min-width breakpoint-android)
+		font-size 25px
+	@media (min-width breakpoint-tablet)
+		font-size 30px
+	&.location-title
+		background-color #fff
+		box-shadow: the-shadow
+		color the-copy
+
+
+
+.listing-cards
+.listing-projects
+.listing-talents
+	margin-left 20px
+	margin-right @margin-left
+	margin-bottom: 100px
+	// max-width calc(100% - 100px)
+	@media (min-width breakpoint-tablet)
+		margin-bottom: 200px
+	@media (min-width breakpoint-ipad)
+		max-width 100%
+	@media (min-width breakpoint-ipad-landscape)
+		display flex
+		flex-wrap wrap
+		justify-content: space-between
+		margin-left auto
+		margin-right @margin-left
+		max-width 920px
+	&::after
+		@media (min-width breakpoint-ipad-landscape)
+			content ''
+			flex-basis: calc(50% - 30px)
+			flex-shrink: 0
+			margin-left: auto
+			margin-right: auto
+			width @flex-basis
+	.card
+		margin-bottom: 80px
+		@media (min-width breakpoint-ipad-landscape)
+			flex-basis: calc(50% - 30px)
+			flex-shrink: 0
+			margin-bottom: 100px
+			width @flex-basis
+		&:nth-last-child(1),
+		&:nth-last-child(2)
+			.home &
+				@media (min-width breakpoint-ipad-landscape)
+					margin-bottom: 0
+
+.listing-cards
+	&.small
+		justify-content: center
+		&::after
+			display none
+		.location-icon
+			@media (min-width breakpoint-mobile)
+				margin 0
+
+.listing-projects
+.listing-talents
+	.card
+		margin-bottom: 50px
+		@media (min-width breakpoint-mobile)
+			text-align: right
+		@media (min-width breakpoint-tablet)
+			margin-bottom: 100px
+		@media (min-width breakpoint-large)
+			margin-bottom: 150px
+	.card-article-title
+		// box-shadow 10px 0 0 #fff, -10px 0 0 #fff
+		box-decoration-break: clone
+		display inline
+		margin-right 0
+		padding .2em 1em
+		max-width 100%
+	.card-image-container
+		margin-bottom: -1.2em
+
+.listing-talents
+	max-width none
+	.card
+		@media (min-width breakpoint-tablet)
+			text-align: left
+	.card-image-container
+		margin-left auto
+		margin-right 0
+		max-width 445px
+	.card-article-title
+		margin-left 0
+		margin-right auto
