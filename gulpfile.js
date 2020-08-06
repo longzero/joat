@@ -9,11 +9,11 @@ gulp.task('styles', function() {
   return gulp.src('src/css/styles.styl')
     .pipe(gulpCssPreprocessor())
     .pipe(header('/* Generated on: ' + new Date() + ' */\n'))
-    .pipe(gulp.dest('static/css/'))
+    .pipe(gulp.dest('docs/css/'))
     .pipe(minify({minify: true, minifyCSS: true}))
     .pipe(header('/* Generated on: ' + new Date() + ' */\n'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('static/css/'));
+    .pipe(gulp.dest('docs/css/'));
 });
 
 
