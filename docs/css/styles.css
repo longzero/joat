@@ -1,4 +1,4 @@
-/* Generated on: Sun Aug 09 2020 15:42:11 GMT-0400 (GMT-04:00) */
+/* Generated on: Sun Aug 09 2020 15:48:14 GMT-0400 (GMT-04:00) */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -305,7 +305,7 @@ ol {
 @media (min-width: 768px) {
   .important-box {
     position: absolute;
-    top: 180px;
+    top: 100px;
     right: 0;
   }
 }
