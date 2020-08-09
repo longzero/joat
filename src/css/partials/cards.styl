@@ -1,10 +1,19 @@
 .card-grid
-	display flex
-	justify-content: space-between
+	// display flex
+	// justify-content: space-between
+	// flex-wrap wrap
+	display: grid
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap 50px
+
+.card-media--person
+	margin-left: auto
+	margin-right: auto
+	width 80%
 
 .card-person
 	text-align: center
-	width 20%
+	// width 20%
 	.card-media
 		border-radius: 50%
 		margin-bottom: 1em;
