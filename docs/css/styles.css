@@ -1,4 +1,4 @@
-/* Generated on: Sun Aug 09 2020 15:55:58 GMT-0400 (GMT-04:00) */
+/* Generated on: Thu Aug 13 2020 21:23:54 GMT-0400 (GMT-04:00) */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,7 +19,7 @@ button {
   cursor: pointer;
 }
 a {
-  color: #67b1ca;
+  color: #2e9dbb;
   cursor: pointer;
 }
 a:hover {
@@ -124,32 +124,33 @@ ol {
   padding-bottom: 100px;
 }
 .button {
-  background-color: #67b1ca;
-  border: 2px solid #67b1ca;
+  background-color: #bd0e3d;
+  border: 2px solid #bd0e3d;
   border-radius: 5px;
   color: #fff;
-  font-size: 20px;
   padding: 0.6em 1em;
   text-decoration: none;
   transition: 0.3s;
 }
 .button:hover {
   background-color: transparent;
-  color: #67b1ca;
+  color: #bd0e3d;
 }
 .form-duo {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .input-field {
-  border: 2px solid #67b1ca;
+  border: 2px solid #2e9dbb;
   border-radius: 5px;
   flex-grow: 1;
-  font-size: 20px;
-  padding: 0.6em 1em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  padding: 0.4em;
   width: 100%;
 }
 .input-label {
+  color: #444;
   display: block;
   font-family: 'Dosis', sans-serif;
   font-size: 1.25rem;
@@ -194,9 +195,6 @@ ol {
 }
 .navigation-link:hover {
   color: #fff;
-}
-.navigation-link.button:hover {
-  color: #67b1ca;
 }
 .site-header {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0));
@@ -396,7 +394,7 @@ ol {
   height: 30px;
 }
 .social-item-media path {
-  fill: #67b1ca;
+  fill: #2e9dbb;
   transition-duration: 0.3s;
 }
 .social-links {
