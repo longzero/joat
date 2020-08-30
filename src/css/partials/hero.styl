@@ -1,0 +1,49 @@
+.important-box
+	background-color rgba(0,0,0,.7)
+	border-left 4px solid color-1
+	color #fff
+	margin-left: auto
+	margin-right: auto
+	padding 30px //20px
+	max-width: 400px
+	@media (min-width: breakpoint-ipad)
+		position absolute
+		bottom -85px
+		right 0
+	p:last-child
+		margin-bottom: 0
+
+.site-hero
+	background-position bottom
+	background-repeat no-repeat
+	background-size cover
+	position: relative
+	z-index: 1
+	min-height: 95vh
+	// overflow: hidden // Doing this will hide the box overflowing
+	.container
+		@media (min-width: breakpoint-ipad)
+			position absolute
+			bottom 0
+			left 50%
+			transform: translateX(-50%)
+			width 100%
+	.video-wrapper
+		display: none
+		@media (min-width: breakpoint-ipad-landscape)
+			display: block
+
+.video-background
+	position: absolute
+	top 0
+	left 0
+	min-width: 100%
+	min-height 100%
+
+.video-wrapper
+	position: absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	overflow: hidden

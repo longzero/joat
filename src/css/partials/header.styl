@@ -20,32 +20,6 @@
 .logo-link
 	display: block
 
-// .navigation-item
-// 	margin-left: 20px
-// 	margin-bottom: 1em;
-// 	position relative
-// 	&:hover
-// 		li
-// 			padding 8px 20px
-// 		ul
-// 			background-color #fff
-// 			display: block;
-// 			position absolute
-// 			top: 100%;
-// 			left 0
-// 	&:last-child
-// 		margin-bottom: 0
-// 	> ul
-// 		display: none
-
-.navigation-link
-	line-height: 1
-	transition-duration: .3s
-	@media (min-width breakpoint-navigation)
-		margin-left: 20px;
-	&:hover
-		color #fff
-
 .site-header
 	// background-color #444446
 	background-image linear-gradient(to bottom, rgba(0,0,0,.7) 50%, rgba(0,0,0,0));
@@ -78,46 +52,17 @@
 		top 0
 		height 40px
 
-.site-navigation
-	background-color #000
-	display: flex
-	align-items: center
-	justify-content: space-around
-	flex-direction: column
-	font-size: 2em
-	opacity: 0
-	position: fixed
-	top 0
-	left 0
-	z-index: layer-navigation
-	transform translateY(-100%)
-	transition-duration: .3s
-	width 100vw
-	height 100vh
-	@media (min-width: breakpoint-ipad)
-		background-color transparent
-		flex-direction: row
-		font-size: 1rem;
-		opacity: 1
-		position static
-		transform translateY(0)
-		width auto
-		height auto
-	> ul
-		display: flex;
-	a
-		text-decoration: none
-	ul
-		list-style: none;
-
-.navigation-lata
-	.burger
-		&:before
-			transform rotate(45deg)
-		&:after
-			transform translate(0, -6px) rotate(-45deg)
-	.burger-slice
-		display: none
-	.site-navigation
-		opacity: 1
-		transform translateY(0)
+.site-logo-background
+	position absolute
+	top: -25px
+	left: 0;
+	width 100px;
+	height 100px;
+	@media (min-width: breakpoint-navigation)
+		top: -75px
+		left: -50px;
+		transition-duration: .3s;
+		width 250px;
+		height 250px;
+	.scrolled &
+		opacity: 0;
